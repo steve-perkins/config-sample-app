@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Consul/Vault config demo</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>Key</td>
+        <td>Value</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="prop: ${allProperties}">
+        <td th:text="${prop.key}"></td>
+        <td th:text="${prop.value}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
