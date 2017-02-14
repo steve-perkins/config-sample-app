@@ -15,6 +15,8 @@ public class MainController {
     /**
      * TODO: Document
      *
+     * TODO: Make the template look nicer
+     *
      * @return
      */
     @GetMapping
@@ -29,8 +31,8 @@ public class MainController {
      *
      * @return
      */
-    @GetMapping("/reload")
-    public ModelAndView reload() {
+    @GetMapping("/refresh")
+    public ModelAndView refresh() {
         final Map<String, String> properties = PropertiesClient.loadProperties();
         Application.properties.clear();
         Application.properties.putAll(properties);

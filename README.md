@@ -1,5 +1,5 @@
 sample-app
-=========
+==========
 This is one of three Git repositories, which work together to demonstrate using [Consul](https://www.consul.io) and 
 [Vault](https://www.vaultproject.io) for configuration management:
 
@@ -41,6 +41,6 @@ gradlew bootRun -DENVIRONMENT=dev -DAPPLICATION=sampleapp -DCONSUL_HOST=127.0.0.
 4. Make some changes to the properties file in your `config-properties` project (it's not necessary to commit the 
    changes in Git).  Re-run the processor to sync the changes into Consul.
    
-5. Hit the sample app's "reload" endpoint ([http://localhost:8080/reload](http://localhost:8080/reload)) and confirm 
+5. Hit the sample app's "refresh" endpoint ([http://localhost:8080/refresh](http://localhost:8080/refresh)) and confirm 
    that the changes you made are reflected in real time without a restart.
    
