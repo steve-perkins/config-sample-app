@@ -38,3 +38,9 @@ gradlew bootRun -DENVIRONMENT=dev -DAPPLICATION=sampleapp -DCONSUL_HOST=127.0.0.
 
 3. You can access the web application in your browser at: [http://localhost:8080](http://localhost:8080).
 
+4. Make some changes to the properties file in your `config-properties` project (it's not necessary to commit the 
+   changes in Git).  Re-run the processor to sync the changes into Consul.
+   
+5. Hit the sample app's "reload" endpoint ([http://localhost:8080/reload](http://localhost:8080/reload)) and confirm 
+   that the changes you made are reflected in real time without a restart.
+   
