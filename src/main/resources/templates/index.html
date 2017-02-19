@@ -2,26 +2,31 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Consul/Vault config demo</title>
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/bulma.css"/>
 </head>
 <body>
-<table>
-    <thead>
-    <tr>
-        <td>Key</td>
-        <td>Value</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="prop: ${allProperties}">
-        <td th:text="${prop.key}"></td>
-        <td th:text="${prop.value}"></td>
-    </tr>
-    </tbody>
-</table>
+<div class="columns">
+    <div class="column is-half is-offset-one-quarter">
+        <h1 class="title">Framework-agnostic Consul/Vault config demo</h1>
+    </div>
+</div>
+<div class="columns">
+    <div class="column is-half is-offset-one-quarter">
+        <table class="table is-bordered is-striped">
+            <thead>
+            <tr style="font-weight: bold">
+                <td>Key</td>
+                <td>Value</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="prop: ${allProperties}">
+                <td th:text="${prop.key}"></td>
+                <td th:text="${prop.value}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 </html>

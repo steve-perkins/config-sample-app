@@ -13,9 +13,8 @@ import java.util.Map;
 public class MainController {
 
     /**
-     * TODO: Document
-     *
-     * TODO: Make the template look nicer
+     * Displays all of the key/value properties loaded from Consul and Vault (or
+     * the "local.properties" file.
      *
      * @return
      */
@@ -27,7 +26,7 @@ public class MainController {
     }
 
     /**
-     * TODO: Document
+     * Updates the config properties with the latest values.
      *
      * @return
      */
